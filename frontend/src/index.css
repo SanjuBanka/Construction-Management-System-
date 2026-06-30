@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-paper text-ink font-body;
+  background-image:
+    linear-gradient(rgba(27,42,65,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(27,42,65,0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.card {
+  @apply bg-white border border-line rounded-md shadow-sm;
+}
+
+.btn-primary {
+  @apply bg-amber text-white font-display font-semibold px-4 py-2 rounded-md hover:bg-orange-600 transition-colors disabled:opacity-50;
+}
+
+.btn-secondary {
+  @apply bg-ink text-white font-display font-semibold px-4 py-2 rounded-md hover:bg-slate transition-colors;
+}
+
+.input-field {
+  @apply w-full border border-line rounded-md px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-amber/50 font-body text-sm;
+}
+
+.badge {
+  @apply inline-block px-2 py-0.5 rounded text-xs font-mono uppercase tracking-wide;
+}

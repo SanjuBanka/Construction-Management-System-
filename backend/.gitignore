@@ -1,7 +1,0 @@
-target/
-.idea/
-*.iml
-.mvn/
-mvnw
-mvnw.cmd
-.env
